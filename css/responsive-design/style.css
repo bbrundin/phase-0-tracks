@@ -1,22 +1,16 @@
 body {
   max-width: 960px;
-  /*overflow: auto;*/
-  /*font-size: 20px;*/
-}
-
-h1 {
-  border: solid black;
-  margin-bottom: 0;
+  /*min-width: 580px;*/
+  /*background-color: red;*/
 }
 
 main {
-  width:70%;
-  min-width: 360px;
+  /*width:79%;*/
+  /*min-width: 360px;*/
   display: inline-block;
-  /*vertical-align: top;*/
-  /*float: left;*/
-  /*margin: 100px;*/
-  /*overflow: auto;*/
+  /*float: right;*/
+  max-width: 75%;
+  /*min-width: 360px;*/
 }
 
 blockquote {
@@ -30,40 +24,19 @@ cite {
   margin-top: 10px;
 }
 
+#external-links {
+  /*width: 21%;*/
+  min-width: 175px;
+  display: inline-block;
+  vertical-align: top;
+  /*float: right;*/
+  /*width: 14%;*/
+}
+
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
 }
-
-#external-links {
-  float: right;
-  padding-left: 20px;
-  width: 20%;
-  min-width: 175px;
-  position: relative;
-  /*overflow: auto;*/
-  display: inline-block;
-  vertical-align: top;
-}
-
-/*.column {
-  display: inline-block;
-  vertical-align: top;
-  width: 500px;
-}*/
-
-#orange-flower {
-  padding: 0;
-}
-
-@media screen and (max-width: 500px) {
-  p, blockquote, figcaption, li {
-    font-size: 11px;
-  }
-  h1, h2, h3 {
-    font-size: 1em;
-  }
-
 
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like,
@@ -81,10 +54,3 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
-
-
-/*@media screen and (max-width: 500px) {
-  body {
-    background-color: hotpink;
-  }
-}*/
