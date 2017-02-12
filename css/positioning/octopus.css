@@ -1,0 +1,29 @@
+header {
+  color:red;
+  font-size: 30px;
+}
+
+.octopus-dressed {
+  position: absolute;
+}
+
+#octopus {
+  position: relative;
+  top: 100px;
+  left: 15px;
+  z-index: 10;
+}
+
+#hat {
+  position: absolute;
+  top: -70px;
+  left: 10px
+  z-index: 50;
+}
+
+#glasses {
+  position: absolute;
+  top: 210px;
+  left: 61px;
+  z-index: 70;
+}
