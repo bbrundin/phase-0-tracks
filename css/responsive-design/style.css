@@ -3,6 +3,9 @@ body {
   /*min-width: 580px;*/
   /*background-color: red;*/
 }
+  h1 {
+    margin-bottom: 0px;
+  }
 
 main {
   /*width:79%;*/
