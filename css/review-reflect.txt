@@ -1,0 +1,33 @@
+##Name at least three categories of CSS adjustments (example: colors)?
+
+*Basic box- Everything that goes with creates a div or box. This involves positioning, margins, float, bottom, padding, and z-index to name a few
+*Text decoration- Anything to do with specific look of a certain text. Specifying color, line, style, shadow, underline.
+*Fonts- specifies type of font or font family, font size, font-weight.
+
+##What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+
+* 1- External -You can add a link ref to the css stylesheet in the head that directly points to your css file. This is the best way because in a totally separate file you can have all of your css in one place organized as reference, as opposed to being scattered around the html file.You can also use a full URL to link to an outside style sheet that is not local on your computer. This would also be in the header of your HTML file. Would look like <link rel= "stylesheet" href= "http://www.w3schools.com/html/styles.css"
+
+* 2- You can add a <style> attribute in the HTML element for inline css styling
+
+*3- You can use a <style> element in the header section for Internal CSS styling. This would keep all of your CSS in one place at the top of the document.
+
+## What is a selector? Give examples of at least three types of selectors.
+
+*A selector is a pattern that selects the elements you want to style together as a group so that you do not have to change each element on a page individually.
+* .class = first you must define the class and then using this selector, you can select all element defined by this same class
+* #id = first you must define this id and then you can select all elements with the same id. No selector can have the same id.
+* The * selects all elements. We have used this on git version control as an example, git add *  would add all files that have been worked on under a branch to be committed for staging.
+
+#What is the box model?
+* A box model in css is the box the wraps around every html element. Involved with the box model are margins, borders, padding, and actual content. These can be manipulated based on how you want the content within the box to be displayed as well as how you want the box models to be displayed amongst each other. (side by side, overlapping, etc.)
+
+#Explain and give an example of the cascading effect of CSS.
+*The cascading effect of CSS refers to the hierarchy in which styling takes effect and can override more general styles. By rule, the styles further down on the style sheet override equivalent styles higher up.
+
+#Name two CSS techniques that assist in responsive design.
+*Media Queries- helps websites adapt in layout according to browser width, and the multitude of platforms that people are using to experience the web (iPhone, iPad, watch, computer).
+*Using Max-width for responsive images. this allows mobile optimized images for smaller screen and higher resolution version for larger screens- again, when you are switching your browser from phone to computer, this is very important.
+
+
+
