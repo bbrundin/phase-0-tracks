@@ -1,0 +1,41 @@
+-For elevator in building
+-Decide the floor you will need to go to
+-If on ground floor, press UP elevator button to call elevator to you
+-Wait for elevator arrival and doors to open
+
+If elevator arrives:
+  -Step inside
+  -Find the floor number you would like elevator to take you to
+  -Push button for desired floor
+  -Make sure button lights up
+  -wait for doors to close and elevator begins to move
+
+Until elevator stops on your correct floor number
+-wait for doors to open
+-Exit the elevator
+
+Elsif elevator does not bring you to correct floor or stops moving
+  -Press red "emergency call" button 2x
+  -Wait for help to arrive
+
+Else, do not exit elevator
+
+
+MY ALGORITHM FOR GOING TO BED
+
+If tired:
+-Decide if it is time to try to go to sleep
+
+-If decesion is yes
+  -lay down and close eyes
+    -If eyes won't close
+      -turn on TV
+
+-If decesion is no
+  -get ready for bed
+    -if ready for bed
+      -read a book
+
+end
+
+
