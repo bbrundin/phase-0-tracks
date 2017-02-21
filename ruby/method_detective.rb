@@ -4,36 +4,39 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
-# "iNvEsTiGaTiOn".<???>
-# => “InVeStIgAtIoN”
 
-# "zom".<???>
-# => “zoom”
 
-# "enhance".<???>
-# => "    enhance    "
+"iNvEsTiGaTiOn".swapcase
+=> “InVeStIgAtIoN”
 
-# "Stop! You’re under arrest!".<???>
-# => "STOP! YOU’RE UNDER ARREST!"
+"zom".gsub("o", "oo")
+=> “zoom”
 
-# "the usual".<???>
-#=> "the usual suspects"
+"enhance".center(15)
+=> "    enhance    "
 
-# " suspects".<???>
-# => "the usual suspects"
+"Stop! You’re under arrest!".upcase!
+=> "STOP! YOU’RE UNDER ARREST!"
 
-# "The case of the disappearing last letter".<???>
-# => "The case of the disappearing last lette"
+"the usual" <<  " suspects"
+=> "the usual suspects"
 
-# "The mystery of the missing first letter".<???>
-# => "he mystery of the missing first letter"
+" suspects".prepend("the usual")
+=> "the usual suspects"
 
-# "Elementary,    my   dear        Watson!".<???>
-# => "Elementary, my dear Watson!"
+"The case of the disappearing last letter".chop
+=> "The case of the disappearing last lette"
 
-# "z".<???>
-# => 122 
-# (What is the significance of the number 122 in relation to the character z?)
+"The mystery of the missing first letter" .reverse.chop.reverse
+=> "he mystery of the missing first letter"
 
-# "How many times does the letter 'a' appear in this string?".<???>
-# => 4
+"Elementary,    my   dear        Watson!".split.join(" ")
+=> "Elementary, my dear Watson!"
+
+"z".ord
+=> 122
+(What is the significance of the number 122 in relation to the character z?)
+Letter z is corresponds to number 122 on the ASCII table.
+
+"How many times does the letter 'a' appear in this string?".count("a")
+=> 4
