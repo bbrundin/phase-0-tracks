@@ -1,0 +1,55 @@
+Variables
+
+1. What is a variable? Why might a programmer use a variable?
+
+A variable is a way programmers can define data in a given problem. The variable holds the data that will be entered. For example creating a variable for first_name would hold the first name the user’s enters, unless otherwise defined in the problem. first_name = “brittany”
+
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+
+Ruby will run the line from left to right. this would print “Abraham Lincoln” in the console.
+
+Data Types
+
+* string- sentences formed by a list of characters. can also be variables and printed in quotes. example “Hello, world!” is a string.
+* integer- a numeric value. ex. 4
+* float- a decimal value, not a whole number. ex. 1.21
+* nil- zero or nonexistent. If you do not have a favorite color and the program asks you to input favorite color, you may enter nil as a value, and the program would run it as non existent.
+* boolean- a possible true/false variable using algebra notion to represent logic. Ex. if you set the magic_number variable = 5, and wrote a boolean statement if magic_number > 7, this would be set as false as you already set the variable to equal 5.
+Algorithms
+
+4. What is an algorithm?
+
+An algorithm is a set of steps explained or actions to be performed in order to solve a problem.
+
+5. What are two common categories of algorithm in computer science?
+
+Searching algorithm- like checking a list for a name, and Sorting algorithm- this could be numbering from small to large or alphabetizing.
+
+6. What is a method? Why might a programmer choose to use a method?
+
+A method is associated with a procedure and an object. A method allows an object to perform an action, whether this action is to modify itself or to return a value. A programmer would use a method to have the value returned.
+
+7. Define the following terms as they relate to a method.
+
+* return value- value is the variable coming back from the method. whatever is “returned” back to you after the method was called.
+* side effect- a function has a side effect if it modifies some state outside its scope or has an interaction with its functions or outside world.
+* parameter- the given boundaries defined in parenthesis
+* argument- an exchange of diverging or opposite views- can be Required or optional- they have a default value.
+* implicit return- any statement in Ruby returns the value of the last evaluated expression
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+
+Scope has to do with variables and visibility. It is about where something is visible and what variables/constants and methods are available to you at the given moment. Diff variables are available to you in diff lines of context. A global variable is available everywhere within your Ruby script. Method scope defines a variable using “def” and ends the call using end. It is solving the problem using a specific method.
+
+9. What is control flow? Why might a programmer choose to use flow control?
+
+Control flow is the order in which individual statements or instructions of function calls are executed and evaluated. Flow control is easily readable and helps determine which section of code is run in a program at a given time.
+
+10. Define the following terms as they relate to flow control.
+
+* loop - a sequence of instructions that is continually repeated until a certain condition is reached.
+* if- "if" statements are used to help Ruby identify the condition and the true-part of the expression
+* else- helps Ruby identify the false part of the expression.
+* elsif- helps Ruby identify another option in the expression if the "if" statement is not true and the else statement is not completely false. It gives user one more option.
+* while- executes code while condition is true.
+* until- executes code while condition is false.
