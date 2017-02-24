@@ -11,34 +11,43 @@
 # Prompt the designer for likes nautical theme (y/n)
 #   save nautical pref as hash :nautical_pref
 
-# Prompts designer to enter if they have finished filling out info
-# If finished == "yes"
-# prints data back to screen when designer has filled info
-
-#   if all info is not correct, updates client details
-
-
 puts "Hello! Please enter your client info."
 
 client = {}
 puts "What is your client's name?"
       client[:name] = gets.chomp
-puts "What is thier age?"
-      client[:age] = gets.chomp
-puts "How many children?"
+
+puts "What is your client's age?"
+      client[:age] = gets.chomp.to_i
+
+puts "How many children does your client have?"
       client[:children_num] = gets.chomp
-puts "Two words to describe their decor theme?"
+
+puts "Enter two words to describe their decor theme?"
       client[:decor_theme] = gets.chomp
-puts  "Likes nautical? (y/n)"
+
+puts  "Does your client like nautical? (y/n)"
       client[:nautical_pref] = gets.chomp
 
-puts "please confirm you are finished"
-      client[:finished] = gets.chomp
 
-#if finished == "yes"
-#  puts "Thank you!"
-#    else puts "please start again"
-#end
+#print initial print of client intake by printing hash to the screen
 
-puts client
+puts "Thank you, here is what we've gathered!"
+p client
+
+
+#   if all info is not correct, asks for confirmation to updates client details
+
+puts "Would you like to make any changes to your entry?"
+  response = gets.chomp
+
+  if response == "no"
+    puts "Great. Here is a summary of your original report."
+      p client
+  else
+    puts "Sure! Please input your new answer"
+      answer = gets.chomp
+      client[response.to_sym] = answer
+      puts client
+  end
 
