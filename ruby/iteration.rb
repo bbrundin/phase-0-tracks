@@ -47,9 +47,10 @@ end
 
 
 
-#This is the last one, a method that will remove items from a data structure
-flavors.map do |flavor|
-flavor.length <= 10
+flavors = ["chocolate", "strawberry", "vanilla", "pistachio"]
 
-  p flavors.drop_while{|flavor| flavor.length < 10}
+flavors.map do |flavor|
+
+
+  p flavors.drop_while{|flavor| flavor.length >=9}
 end
