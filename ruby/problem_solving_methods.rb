@@ -1,15 +1,22 @@
 
 #Release 0: Implement a Simple Search
 
-arr = [42, 89, 23, 1]
-
-def search_array(arr, num)
-  arr.index(num)
+def search(array, num)
+  matching_index = nil
+  current_index = 0
+  array.each do |x|
+    if x == num
+      matching_index = current_index
+    end
+    current_index += 1
+  end
+  matching_index
 end
 
-p search_array(arr, 1)
+p search([1,4,7,2,28,99]
 
-p search_array(arr, 24)
+p search(array,num)
+
 
 
 #Release 1: Calculate Fibonacci Numbers
