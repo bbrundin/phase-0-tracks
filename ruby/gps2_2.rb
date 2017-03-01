@@ -85,7 +85,7 @@ def add_to_list(list, item_name, qty)
 if list.class == Hash
 new_list = list
 else
-  new_list = grocery_list(list)
+  new_list = grocery_listist)
 end
 if qty == "none"
   qty = 1
@@ -122,5 +122,21 @@ update_quanity(list, "Ice Cream", 1)
 print(list)
 
 #Release 4: Reflect
+
+=begin
+1. I didnt realize psuedocode could be so actionable. Although it is
+sentence structure base, you can still use words like IF and LOOP.
+2. I prefered hashes for this challenge, as they were able to store and
+maniupulate the data that we were using more.
+3. A method returns the last declared variable. This is why it's important
+to use implicit return, and declare that value at the end that you wish
+to return.
+4.Methods can hold arrays, hashes, strings, and other methods.
+5. Information is passed between methods by defining the method and then
+calling this definition in the next method.
+6. Methods within methods is still confusing. Calling between methods is still confusing
+I plan to review a lot more with methods.
+=end
+
 
 
