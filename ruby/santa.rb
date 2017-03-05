@@ -3,6 +3,7 @@ class Santa
       @gender = gender
       @ethnicity = ethnicity
       @name = name
+      @age = 0
       puts "Initializing Santa instance ..."
     end
 
@@ -15,17 +16,38 @@ class Santa
     treat
   end
 
+  def celebrate_birthday
+    @age += 1
+  end
+
+  def getName
+    @name
+  end
+
   def age
-    @age = 0
+    @age
   end
 
-  def sayName
-    puts @name
+  def ethnicity
+    @ethnicity
   end
 
-  def reinder_ranking
-    @reinder_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  def age=(new_age)
+    @age = new_age
   end
+
+  def gender=(new_gender)
+    @gender = new_gender
+  end
+
+  def reindeer_ranking
+    @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  end
+
+  def get_mad_at(reindeer)  #take reindeer from reindeer ranking and make it index -1
+    # for reindeer in reindeer_ranking
+    index = [-1]
+    end
 end
 
 #Driver Code
@@ -61,8 +83,10 @@ end
 
 puts "Testing that each Santa instance in the array to make sure they can greet the kiddos.."
 santas.each do |santa|
-  santa.sayName
+  p santa.getName
   santa.speak
 end
+
+santas[0].celebrate_birthday
 
 
