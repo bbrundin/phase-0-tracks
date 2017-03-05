@@ -33,6 +33,8 @@ class Student
   include Shout
 end
 
+#Initialize Driver Code
+
 teacher = Teacher.new
 p teacher.yell_angrily("students")
 p teacher.yelling_happily("students")
