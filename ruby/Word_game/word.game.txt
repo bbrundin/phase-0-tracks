@@ -1,0 +1,73 @@
+
+=begin
+
+Psuedocode for Word Game 6.6 Solo Challenge
+#game class
+
+#create game class for computer program to use
+
+  class Computer_player
+
+  create initialize method
+     passing words through initialize
+  @secret_world = "secret_word"
+  @guesses = [guess1, guess2, guess3]
+#initialize a limited guess_count that equals the length of secret_world
+  @guess_count = secret_word.length
+end
+
+def secret_word(secret_word)
+  secret_word == "secret_word"
+end
+
+def guess_word(guess_word)
+    if guess_word != secret_word
+    print similar letters in each
+    allow user to guess again
+  end
+
+#must split letters being returned from secret_word and guess_word and then pull matching letters from both
+
+def matching_letters(letters)
+  secret_word.split(''')
+  guess_word == gets.chomp.to_s
+  split guess_word
+  match(letters)
+end
+
+define correct letters in the @guesses
+  method for pulling letters in @guess to match any letters in secret_word
+    print back correct letter in @guesses
+
+  guess_counter(number_guesses)
+  keeps track of number of guesses user has left based on
+  secret_word.length
+end
+
+
+# user interface
+
+  welcome user to the game
+
+  ask user to guess a word
+
+  guess_word = gets.chomp
+
+  if guess == secret_word
+
+  print "You've got it!"
+
+  else
+
+  if guess_word != secret_word
+
+  print "Wrong! You have {number_guesses} more guesses. Here are the correct letters"
+  print matching_letters
+end
+end
+
+
+
+
+
+=end
