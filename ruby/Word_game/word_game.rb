@@ -16,6 +16,7 @@
 # end
 
 
+
 class Hangman
 
   attr_reader :is_over
