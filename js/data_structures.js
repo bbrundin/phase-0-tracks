@@ -102,3 +102,13 @@ function Car(brand, year, isFastCar) {
 
 
 
+// #Release 3- Research
+
+
+// 2. Yes the advantages are you can easily create a new object just by entering
+// new information in the parameters. The disadvantages it can get a bit repetitive and
+// the code is not DRY.
+
+
+
+
