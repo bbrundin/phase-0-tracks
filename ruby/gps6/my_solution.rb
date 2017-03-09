@@ -8,22 +8,28 @@
 #
 #
 require_relative 'state_data'
+=begin
+#require_relative allows this file to point at the state_data file as if it was
+part of this file. Require relative means that these files are in the same directory.
+Require can pull in files from the desktop or further back, and other files types.
+=end
 
 class VirusPredictor
 
+#initialize method - passes through the instance variables into every instance
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
-
+#printing method to calculate within predicted_deaths and speed_of_spread
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
   private
-
+#conditional if/else statement to calculate number_of_deaths by population and return a print out of the results.
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -41,7 +47,7 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
+#running parameters through conditional and printing speed of spread in a string
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
