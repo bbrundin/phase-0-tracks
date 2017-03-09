@@ -52,15 +52,11 @@ var horse_colors = {
 // }
 
 
-
 console.log(horse_colors);
 
-console.log(new_horse.push(horse_colors));
-
+// console.log(new_horse.push(horse_colors));
 
 console.log("The horse's name is " + horse_info['name'] + " and it's color is " + horse_info['colors'] + ".");
-
-
 
 var horses = 'name';
 console.log(horse_info[horses]);
@@ -69,10 +65,40 @@ var horses = 'colors';
 console.log(horse_info[horses]);
 
 
+// #we need to figure out how to make a universal loop to access printing all horses and their colors
 
 
-// var dog = {name: 'Spot', 'age': 3, isGoodDog: true};
+// #Release 2 : Constructing a Car
 
-// console.log("The dog's name is " + dog['name'] + ".");
+var car = {brand: 'Lexus', 'year': 2009, isFastCar: true};
 
-// console.log("The dog's name is " + dog.age + ".");
+
+function Car(brand, year, isFastCar) {
+  console.log("Our new car:", this);
+  this.brand = brand;
+  this.year = year;
+  this.isFastCar= isFastCar;
+
+  this.honk = function() {console.log("Beep Beep!"); };
+
+  console.log("CAR INITIALIZATION COMPLETE");
+}
+
+
+  console.log("Let's build a car ...");
+  var anotherCar = new Car("Toyota", 2010, false);
+  console.log(anotherCar.brand);
+  console.log("Our car can honk:");
+  anotherCar.honk();
+  console.log("----");
+
+ console.log("Let's build another car ...");
+  var yetAnotherCar = new Car("Jeep", 2001, true);
+  console.log(yetAnotherCar.brand);
+  console.log("This new car can honk too:");
+  yetAnotherCar.honk();
+  console.log("----")
+
+
+
+
