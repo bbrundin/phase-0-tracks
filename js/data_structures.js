@@ -29,7 +29,7 @@ var horse_info = {name: 'Sparkles', colors: 'blue'};
 // }
 
 
-horse_colors = {
+var horse_colors = {
    'Sparkles': 'blue',
    'Zoe': 'purple',
    'Mini': 'pink',
@@ -38,11 +38,24 @@ horse_colors = {
 }
 
 
+// var new_horse = [],
+//     horse_colors;
+
+// for (var i = 0; i < colors.length; i++) {
+//     horse_colors = {};
+//     for (var i = 0; i < horses.length; i++) {
+//       horse_colors[horses[i]] = colors[i][i];
+//     }
+//     new_horse.push(horse_colors)
+
+//   console.log(horses[i]);
+// }
+
+
+
 console.log(horse_colors);
 
-
-
-// console.log(horse_colors
+console.log(new_horse.push(horse_colors));
 
 
 console.log("The horse's name is " + horse_info['name'] + " and it's color is " + horse_info['colors'] + ".");
