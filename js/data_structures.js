@@ -13,8 +13,11 @@ console.log(horses);
 console.log(colors);
 //
 // #loop of horses
+
+var horse_colors = {};
+
 for (var i = 0; i < horses.length; i++) {
-  console.log(horses[i]);
+  horse_colors[ horses[i] ] = colors[i];
 }
 
 var horse_info = {name: 'Sparkles', colors: 'blue'};
@@ -29,13 +32,13 @@ var horse_info = {name: 'Sparkles', colors: 'blue'};
 // }
 
 
-var horse_colors = {
-   'Sparkles': 'blue',
-   'Zoe': 'purple',
-   'Mini': 'pink',
-   'Violet': 'red',
-   'Spot': 'green',
-}
+// var horse_colors = {
+//    'Sparkles': 'blue',
+//    'Zoe': 'purple',
+//    'Mini': 'pink',
+//    'Violet': 'red',
+//    'Spot': 'green',
+// }
 
 
 // var new_horse = [],
@@ -104,7 +107,7 @@ function Car(brand, year, isFastCar) {
 
 // #Release 3- Research
 
-
+// 1. Loops-
 // 2. Yes the advantages are you can easily create a new object just by entering
 // new information in the parameters. The disadvantages it can get a bit repetitive and
 // the code is not DRY.
