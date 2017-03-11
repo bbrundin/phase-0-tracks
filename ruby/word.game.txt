@@ -1,0 +1,85 @@
+
+=begin
+
+Psuedocode for Word Game 6.6 Solo Challenge
+#game class
+
+#create game class for Hangman game
+
+  class Hangman
+
+#create initialize method
+
+  @secret_world = "whatever the user enters"
+
+#create a secret_world_length variable to capture the length of secret_word
+
+  @secret_world_length = secret_word.length
+
+ # create a number_guesses variable that equals the length of secret_world and limits the amount of guesses
+
+ @number_guesses = secret_world_length
+
+  end
+
+ # set up definition for secret word method
+
+  def secret_word(secret_word)
+  secret_word == "secret_word"
+  end
+
+def guess_word(guess_word)
+    if guess_word != secret_word
+    print similar letters in each
+    allow user to guess again
+  end
+
+#must split letters being returned from secret_word and guess_word and then pull matching letters from both
+
+def matching_letters(letters)
+  secret_word.split('')
+  guess_word == gets.chomp.to_s
+  split guess_word
+  match(letters)
+end
+
+define correct letters in the @guesses
+  method for pulling letters in @guess to match any letters in secret_word
+    print back correct letter in @guesses
+
+  guess_counter(number_guesses)
+  keeps track of number of guesses user has left based on
+  secret_word.length
+end
+
+
+# user interface
+
+  ask player1 to enter a secret word
+
+    capture secret_word with a gets.chomp
+
+  ask player2 to guess the secret word
+
+    player2 guess becomes game.progress
+
+  while LOOP game is not over
+
+    guesses entered = gets.chomp
+
+  if guess entered is not correct
+
+    print game progress (turns you have left)
+
+  ELSE you guessed secret word correctly!
+
+    print congrats method
+
+  end
+
+  IF method checking final word - if incorrect
+
+    print failure method
+
+
+=end

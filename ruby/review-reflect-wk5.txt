@@ -1,0 +1,59 @@
+review-reflect-wk5
+
+
+Data Structures
+
+1. Data structures help organize data in program so that it can easily be called upon and manipulated later on.
+
+Arrays
+
+2. An array is nested data separated by commas that represents a group and can be called upon later to be searched either through a function or a method.
+Can be integers, strings, or letters.
+
+#array
+greeting = ["h", "e", "l", "l", "o"]
+
+3. Colors of the rainbow ["pink", "red", "orange", "yellow", "green", "blue", "purple"]
+
+vowels ["a", "e", "i", "o", "u"]
+
+
+Hashes
+
+4. A hash is another set of data that specifically deals with a key and a value. The key indicates the value and the key can therefore print the value when called on and vice versa.
+
+5.
+#hash
+season_weather = {
+  "winter" => "cold",
+  "spring" => "warm",
+  "summer" => "hot",
+  "fall" => "mild"
+}
+
+oscar_winners = {
+  "best picture" => "Moonlight",
+  "best actor" => "Casey Affleck",
+  "best actress" => "Emma Stone",
+  "best director" => "Damien Chazelle"
+}
+
+Iteration
+
+6. To iterate is to do something many times, so iteration is helpful that it allows you to call on the method and perform one action many times on different variables in the method untill it runs through the function and prints what has been called on.
+
+7. A real life task could be giving a list of last names and checking to see which one belongs to you.
+
+Blocks
+
+8. A block is a way of grouping statments and may only appear next to a method call- is code that you put between the words 'do' and 'end'. Or inline, between { and }. You can iterate through data using a block.
+
+9. A block parameter is wrapped in two pipe symbols.
+for ex.
+|letters|
+or |key, value|
+It does not mean so much what the block is named, as long as it is known that it represents the values of the array or hash that are going to be manipulated, in the same order that they are listed in the array.
+
+
+
+

@@ -66,25 +66,25 @@ end
 
 # user interface
 
-game = Hangman.new
+# game = Hangman.new
 
-p "Player 1 enter your secret word"
-game.secret_word = gets.chomp
+# p "Player 1 enter your secret word"
+# game.secret_word = gets.chomp
 
-p "Player 2 guess the secret word!"
-p game.progress()
+# p "Player 2 guess the secret word!"
+# p game.progress()
 
-while !game.is_over
-  guess = gets.chomp
-  if !game.check(guess)
-    puts game.progress()
-    puts "try again! you have #{game.guess_count} tries remaining!"
-  else
-    puts "you guessed #{game.progress()}!"
-    puts "congrats! you've won the game!! you guessed it right!"
-  end
-end
+# while !game.is_over
+#   guess = gets.chomp
+#   if !game.check(guess)
+#     puts game.progress()
+#     puts "try again! you have #{game.guess_count} tries remaining!"
+#   else
+#     puts "you guessed #{game.progress()}!"
+#     puts "congrats! you've won the game!! you guessed it right!"
+#   end
+# end
 
-if !game.check_word()
-  p "you didn't guess the word sorry!!"
-end
+# if !game.check_word()
+#   p "you didn't guess the word sorry!!"
+# end

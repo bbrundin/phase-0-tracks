@@ -1,0 +1,36 @@
+Review and Reflect- Week 6
+
+1. What are classes?
+
+Classes include instructions for both characteristics (attributes) and behavior (methods). A class includes a broader spectrum of a group- a good example would be "human" as a class. To get more specific, you can create instance variables within your class, which are unlimited and unique within your class and differentiate between all the sub-classes or instances, so that not all properties in the class are tied to be the same thing. Below, a class could be Human, and we could create a new Human, 'Teresa' to serve as an instance of this class. From there we can create unlimited other human's all with their own unique characteristics.
+ex. class Human
+    Teresa= Human.new
+
+State - characteristics, or data of each instance. These characteristics go within your instance class. You can define them for your new instance - 'Teresa' with properties like eye color, height, weight, etc.
+
+Instance method would describe the behavior of your instance within your class.
+
+2. Attributes are characteristics or "state" that only exist inside the class.  Attributes are specific properties of an object. In Ruby all instance variables, or attributes are private by default, aka they only exist inside the class and you don't have access to them outside the scope of the inheritance itself. If we want attributes available outside the class, you must write a method that returns requested data. You can do this by using an accessor method using an attribute accessor.
+
+3. Give an example of a real world object, and describe how you might assign its attributes if you were to design a class to represent that object.
+
+In a box, I would assign it attributes using the initializer method that would pass through these variables.
+
+class Box(color, size, weight_in_lbs)
+@color = "brown"
+@size = "large"
+@weight_in_lbs = 10
+
+4. What is the purpose of the initialize method? When does it run?
+
+Initialize makes sure this code runs before any other code, no matter where it is placed, it will print as if it is in the beginning of the block
+
+5. A module is a collection of methods, classes, and constants. A module is different than a class because it can have no instances or subclasses.
+
+6. What are the different ways you can use a module?
+
+Modules collect related methods and constants in a central location. By compartmentalizing methods you can organize them better. You do this by calling the module right before calling the method.
+ex.SomeModule.some_method
+
+Mixin- another use of modules, this allows inheritance from more than one superclass. Two different classes that are completely unrelated, may use the same module for functionality. By including a module in a class definition, the methods are "mixed in" to the class.
+
