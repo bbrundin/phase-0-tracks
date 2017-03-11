@@ -1,10 +1,9 @@
 
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge with: Kyle McDonald.
+# We spent 2 hours on this challenge.
 
-# EXPLANATION OF require_relative
 #
 #
 require_relative 'state_data'
@@ -39,16 +38,17 @@ class VirusPredictor
   def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
+      deaths= 0.4
     elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
+      deaths= 0.3
     elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
+      deaths= 0.2
     elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
+      deaths= 0.1
     else
-      number_of_deaths = (@population * 0.05).floor
+      deaths= 0.05
     end
+  number_of_deaths = (@population * deaths).floor
 
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
@@ -106,4 +106,23 @@ alaska.virus_effects
 
 
 #=======================================================================
+=begin
+
 # Reflection Section
+
+1. The hash syntax is there is one hash STATE_DATA that holds the key
+'state' and then each state has two key values based on population.
+2.require_relative allows this file to point at the state_data file as if it was
+part of this file. Require relative means that these files are in the same directory.
+Require can pull in files from the desktop or further back, and other files types.
+3.The most simple way to iterate over a hash would be :
+
+hash.each do |key, value|
+  puts key
+  puts value
+end
+4. We removed the parameters for predicted_deaths and speed_of_spread,that were passing thorugh virus_effects.
+These were unneccesary as these are class variables and are accessible throughout the method.
+5. I got a better understanding of refactoring and making code DRY during this challenge.
+
+=end
