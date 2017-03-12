@@ -68,8 +68,6 @@ var horses = 'colors';
 console.log(horse_info[horses]);
 
 
-// #we need to figure out how to make a universal loop to access printing all horses and their colors
-
 
 // #Release 2 : Constructing a Car
 
@@ -107,7 +105,7 @@ function Car(brand, year, isFastCar) {
 
 // #Release 3- Research
 
-// 1. Loops-
+// 1. Loops- You can create a for loop
 // 2. Yes the advantages are you can easily create a new object just by entering
 // new information in the parameters. The disadvantages it can get a bit repetitive and
 // the code is not DRY.
