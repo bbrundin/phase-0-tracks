@@ -32,3 +32,9 @@ function checkLongestWord(arr) {
 
 console.log(checkLongestWord(words));
 console.log(checkLongestWord(abc));
+
+// Release 1
+
+
+
+// Release 2
