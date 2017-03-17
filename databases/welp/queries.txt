@@ -1,0 +1,84 @@
+#Release 2
+
+#Natural Join
+
+select * from businesses NATURAL JOIN users;
+
+=>
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt
+2|Amir's Towing|Mandy|Kaling
+3|The Beagle Nightclub|Angela|Jolie
+4|Lotus Yoga|Steven|Wonder
+
+
+select * from businesses NATURAL JOIN users, reviews;
+
+=>
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|1|5|great food!|1|1
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|2|2|just okay|2|2
+2|Amir's Towing|Mandy|Kaling|1|5|great food!|1|1
+2|Amir's Towing|Mandy|Kaling|2|2|just okay|2|2
+3|The Beagle Nightclub|Angela|Jolie|1|5|great food!|1|1
+3|The Beagle Nightclub|Angela|Jolie|2|2|just okay|2|2
+4|Lotus Yoga|Steven|Wonder|1|5|great food!|1|1
+4|Lotus Yoga|Steven|Wonder|2|2|just okay|2|2
+
+select * from businesses NATURAL JOIN users, reviews;
+
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|1|5|great food!|1|1
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|2|2|just okay|2|2
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|3|3|eh|3|3
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|4|2|bad|4|4
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|5|5|great!|5|5
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|6|3|amazing|6|6
+1|Grundy Hollow Wedding Chapel|Bradford|Pitt|7|5|the best|7|7
+2|Amir's Towing|Mandy|Kaling|1|5|great food!|1|1
+2|Amir's Towing|Mandy|Kaling|2|2|just okay|2|2
+2|Amir's Towing|Mandy|Kaling|3|3|eh|3|3
+2|Amir's Towing|Mandy|Kaling|4|2|bad|4|4
+2|Amir's Towing|Mandy|Kaling|5|5|great!|5|5
+2|Amir's Towing|Mandy|Kaling|6|3|amazing|6|6
+2|Amir's Towing|Mandy|Kaling|7|5|the best|7|7
+3|The Beagle Nightclub|Angela|Jolie|1|5|great food!|1|1
+3|The Beagle Nightclub|Angela|Jolie|2|2|just okay|2|2
+3|The Beagle Nightclub|Angela|Jolie|3|3|eh|3|3
+3|The Beagle Nightclub|Angela|Jolie|4|2|bad|4|4
+3|The Beagle Nightclub|Angela|Jolie|5|5|great!|5|5
+3|The Beagle Nightclub|Angela|Jolie|6|3|amazing|6|6
+3|The Beagle Nightclub|Angela|Jolie|7|5|the best|7|7
+4|Lotus Yoga|Steven|Wonder|1|5|great food!|1|1
+4|Lotus Yoga|Steven|Wonder|2|2|just okay|2|2
+4|Lotus Yoga|Steven|Wonder|3|3|eh|3|3
+4|Lotus Yoga|Steven|Wonder|4|2|bad|4|4
+4|Lotus Yoga|Steven|Wonder|5|5|great!|5|5
+4|Lotus Yoga|Steven|Wonder|6|3|amazing|6|6
+4|Lotus Yoga|Steven|Wonder|7|5|the best|7|7
+5|Plumbing by Janet|Holly|Berry|1|5|great food!|1|1
+5|Plumbing by Janet|Holly|Berry|2|2|just okay|2|2
+5|Plumbing by Janet|Holly|Berry|3|3|eh|3|3
+5|Plumbing by Janet|Holly|Berry|4|2|bad|4|4
+5|Plumbing by Janet|Holly|Berry|5|5|great!|5|5
+5|Plumbing by Janet|Holly|Berry|6|3|amazing|6|6
+5|Plumbing by Janet|Holly|Berry|7|5|the best|7|7
+6|Sushi World|Merryl|Streepman|1|5|great food!|1|1
+6|Sushi World|Merryl|Streepman|2|2|just okay|2|2
+6|Sushi World|Merryl|Streepman|3|3|eh|3|3
+6|Sushi World|Merryl|Streepman|4|2|bad|4|4
+6|Sushi World|Merryl|Streepman|5|5|great!|5|5
+6|Sushi World|Merryl|Streepman|6|3|amazing|6|6
+6|Sushi World|Merryl|Streepman|7|5|the best|7|7
+7|JoeBob's Sportz Barn|Denzel|George|1|5|great food!|1|1
+7|JoeBob's Sportz Barn|Denzel|George|2|2|just okay|2|2
+7|JoeBob's Sportz Barn|Denzel|George|3|3|eh|3|3
+7|JoeBob's Sportz Barn|Denzel|George|4|2|bad|4|4
+7|JoeBob's Sportz Barn|Denzel|George|5|5|great!|5|5
+7|JoeBob's Sportz Barn|Denzel|George|6|3|amazing|6|6
+7|JoeBob's Sportz Barn|Denzel|George|7|5|the best|7|7
+
+#Inner Join
+
+select * from businesses join reviews
+where users.users.id = reviews.businesses_id;
+
+=> error
+
