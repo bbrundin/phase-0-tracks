@@ -1,0 +1,72 @@
+8.3 Solo Challenge
+
+Release 2
+
+
+1. Display table info
+
+sqlite> select * from salespeople;
+1|Brittany|Brundin|2
+2|Vera|Gramiak|5
+3|Lindsay|Icuss|4
+
+2. Update an item in a table
+
+sqlite> update orders set Customer_name="Bloomingdales" where salesperson_id=3;
+
+sqlite> select * from orders;
+2|2|2017-01-16|Francesca's
+3|3|2017-02-04|Bloomingdales
+4|1|2016-11-27|Belk
+
+3. Display info in both tables using one query
+
+sqlite> select * from salespeople join orders;
+
+1|Brittany|Brundin|2|2|2|2017-01-16|Francesca's
+1|Brittany|Brundin|2|3|3|2017-02-04|Bloomingdales
+1|Brittany|Brundin|2|4|1|2016-11-27|Belk
+2|Vera|Gramiak|5|2|2|2017-01-16|Francesca's
+2|Vera|Gramiak|5|3|3|2017-02-04|Bloomingdales
+2|Vera|Gramiak|5|4|1|2016-11-27|Belk
+3|Lindsay|Icuss|4|2|2|2017-01-16|Francesca's
+3|Lindsay|Icuss|4|3|3|2017-02-04|Bloomingdales
+3|Lindsay|Icuss|4|4|1|2016-11-27|Belk
+
+4. Display narrower selection of columns
+
+sqlite> select salespeople.first_name, orders.customer_name from salespeople join orders ON salespeople.id = salesperson_id;
+
+Vera|Francesca's
+Lindsay|Bloomingdales
+Brittany|Belk
+
+5. Delete an item based on a condition
+
+sqlite> delete from salespeople where commission_percent <= 2;
+
+sqlite> select * from salespeople;
+2|Vera|Gramiak|5
+3|Lindsay|Icuss|4
+
+
+Release 3
+
+inner join- most popular
+left join
+right join
+full join
+
+
+select salespeople.last_name
+
+Left Join
+select * from salespeople left outer join orders using (salesperson_id);
+
+inner join
+select * from salespeople join orders where salespeople.salespeople_id = orders.salesperson_id;
+
+
+
+
+
