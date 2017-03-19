@@ -57,9 +57,15 @@ left join
 right join
 full join
 
-Left Join
 
 select salespeople.last_name
+
+Left Join
+select * from salespeople left outer join orders using (salesperson_id);
+
+inner join
+select * from salespeople join orders where salespeople.salespeople_id = orders.salesperson_id;
+
 
 
 
