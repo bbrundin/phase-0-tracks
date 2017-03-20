@@ -19,15 +19,15 @@ create_table_cmd = <<-SQL
 SQL
 
 
-db.execute(create_table_cmd)
+DB.execute(create_table_cmd)
 
 def add(item)
-  db.execute("INSERT INTO to-do-app (item, complete) VALUES (?, \"false\")", [item])
+  DB.execute("INSERT INTO to-do-app (item, complete) VALUES (?, \"false\")", [item])
   puts "#{item} has been added to your to-do list"
 end
 
 def display_list
-  puts db.execute("select * from to-do-app")
+  puts DB.execute("select * from to-do-app")
 end
 
 
