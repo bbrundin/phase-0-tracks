@@ -25,3 +25,37 @@ def add(item)
   db.execute("INSERT INTO to-do-app (item, complete) VALUES (?, \"false\")", [item])
   puts "#{item} has been added to your to-do list"
 end
+
+def display_list
+  puts db.execute("select * from to-do-app")
+end
+
+
+#Driver Code
+
+puts "Create the ultimate To-Do List with To-Do App(tm)"
+
+loop do
+  puts "enter 1 to add"
+  puts "enter 2 to see your list"
+  puts "type exit to exit"
+
+  input = gets.chomp.downcase
+  case input
+  when "1"
+    puts "Enter to-do item"
+    item = gets.chomp
+    add(item)
+
+  when "2"
+    display_list
+  when "exit"
+    puts "Thank you for using To-Do App(tm)"
+    break
+  else
+    puts "Error, please try a different command"
+  end
+end
+
+
+
