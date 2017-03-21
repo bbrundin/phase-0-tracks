@@ -53,4 +53,18 @@ Release 1: Research Web Servers
 A server is a connection point for several clients, that will handle their requests.
 A client is a software that connect to the server to perfrom actions. The client provides a user interface that allows users to carry out actions.
 
+Web servers have the following characterists:
+- a computer, a chunk of memory on a computer, or a program on a computer
+- set up to respond to HTTP requests
+- can send a file to a browser (HTML, CSS, JS, images)
+- look up data in a database then spits it out
+- perform a calc or execute an algorithm
+
+
+
+
+
+
+
+
 
