@@ -46,4 +46,4 @@ Tutorials point was okay, went back to a lot of Javascript basics.
 
 Found J.Query cheat sheet. bookmarked.
 
-Learned Html <script> tag pointing to local "text/javascript" file should be in <head> tag, not body.
+Learned Html <script> tag pointing to local "text/javascript" file should be in head tag, not body.
