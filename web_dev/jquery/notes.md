@@ -6,6 +6,7 @@ Questions to consider:
 
 Google - top resources to learn JQuery
 Enter Rabbit Hole- Time box self and check in every 20 - 30 min for 2 hours
+Try pomodoro method..
 
 W3Schools
 Tutorials Point
@@ -26,3 +27,8 @@ a javascript library of functions you can call to make code do something super c
 3.What is the end goal that can be made in JQuery?
 
 Based off what I learn, i'll create a simple project file, create the most basic html file, create a basic js file, and test jquery proj
+
+=================================================================
+
+Jquery Post Research Notes
+
