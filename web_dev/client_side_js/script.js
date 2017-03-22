@@ -7,8 +7,6 @@ function addPurpleBorder (event) {
   event.target.style.border = "2px dashed purple";
  }
 
- // addPurpleBorder();
-
 var photo = document.getElementById("dog-wig-photo");
 photo.addEventListener("click", addPurpleBorder);
 
