@@ -10,11 +10,14 @@
 
 $( document ).ready(function() {
 
+  $("p").css("background-color", "pink");
+
     $( "a" ).click(function( event ) {
 
         alert( "As you can see, the link no longer took you to jquery.com" );
 
         event.preventDefault();
+
 
     });
 
@@ -24,5 +27,6 @@ $( document ).ready(function() {
 </head>
 <body>
 
+<p> Oh dang I'm using JQuery :-) </p>
 </body>
 </html>
