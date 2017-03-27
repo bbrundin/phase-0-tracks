@@ -12,6 +12,15 @@ get '/' do
   "#{params[:name]} is #{params[:age]} years old."
 end
 
+#Release 0 add Routes
+get '/' do
+  "#{params[:name]} is located at #{params[:contact]}."
+end
+
+get '/' do
+  "Good job, #{params[:name]}!"
+end
+
 # write a GET route with
 # route parameters
 get '/about/:person' do
@@ -32,6 +41,8 @@ get '/students' do
     response << "ID: #{student['id']}<br>"
     response << "Name: #{student['name']}<br>"
     response << "Age: #{student['age']}<br>"
+    response << "Contact: #{student['contact']}<br>"
+    response << "Great_job! #{student['name']}<br>"
     response << "Campus: #{student['campus']}<br><br>"
   end
   response
